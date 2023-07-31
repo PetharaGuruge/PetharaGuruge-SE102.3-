@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <h1>Lesson 02</h1>
+    </head>
+
+    <body>
+
+        <script>
+
+            window.onload = function(){
+                newFunction();
+            }
+
+            function newFunction(){
+                var total = 0; 
+                
+                for(var i = 1; i <= 5; i++){
+                    var mark = window.prompt(`Enter your marks for ${i}`);
+                    total = total + parseInt(mark);
+                }
+             
+                document.write(`Total : ${total}`);
+                document.write(`Average: ${total/5}`)
+            }
+            
+        </script>
+        
+    </body>
+</html>
